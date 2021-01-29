@@ -4,3 +4,9 @@
 [submodule "home/alois/.oh-my-zsh/custom/plugins/zsh-completions"]
 	path = home/alois/.oh-my-zsh/custom/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
+[submodule "home/alois/.oh-my-zsh/custom/plugins/zsh-autosuggestions"]
+	path = home/alois/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "usr/share/sddm/themes/chili"]
+	path = usr/share/sddm/themes/chili
+	url = https://github.com/MarianArlt/sddm-chili.git
