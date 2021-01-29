@@ -3,9 +3,8 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 wmname LG3D &
 nitrogen --restore
-$HOME/.config/polybar/launch.sh
-# $HOME/.config/polybar/launch.sh custom-theme
 picom --experimental-backends &
+$HOME/.config/polybar/launch.sh custom-theme
 
 bspc monitor DP-0 -d I II III IV V
 bspc monitor HDMI-0 -d VI VII VIII IX X
