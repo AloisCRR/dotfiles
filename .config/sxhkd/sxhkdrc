@@ -6,6 +6,10 @@
 super + Return
 	kitty
 
+# Open ranger file manager
+ctrl + shift + r
+	kitty ranger
+
 # program launcher
 super + @space
 	rofi -show
