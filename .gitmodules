@@ -1,3 +1,6 @@
 [submodule "home/alois/.oh-my-zsh/custom/plugins/fast-syntax-highlighting"]
 	path = home/alois/.oh-my-zsh/custom/plugins/fast-syntax-highlighting
 	url = https://github.com/zdharma/fast-syntax-highlighting.git
+[submodule "home/alois/.oh-my-zsh/custom/plugins/zsh-completions"]
+	path = home/alois/.oh-my-zsh/custom/plugins/zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
