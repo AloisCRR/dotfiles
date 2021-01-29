@@ -8,3 +8,9 @@
 # brainstormr=~/Projects/development/planetargon/brainstormr
 # cd $brainstormr
 #
+
+##############################
+#                            #
+#     ZSH-AUTOSUGGESTIONS    #
+#                            #
+##############################
