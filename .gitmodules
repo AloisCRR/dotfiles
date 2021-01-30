@@ -10,3 +10,6 @@
 [submodule "usr/share/sddm/themes/chili"]
 	path = usr/share/sddm/themes/chili
 	url = https://github.com/AloisCRR/sddm-chili.git
+[submodule "home/alois/.oh-my-zsh/custom/plugins/fzf-tab"]
+	path = home/alois/.oh-my-zsh/custom/plugins/fzf-tab
+	url = https://github.com/Aloxaf/fzf-tab
