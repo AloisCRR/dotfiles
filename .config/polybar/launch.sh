@@ -21,17 +21,8 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 # Launch polybar on all monitors
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-    MONITOR=$m polybar $THEME --reload -c $THEME_FOLDER/main.ini &
+    MONITOR=$m polybar $THEME --reload -c $THEME_SELECTED_FOLDER/main.ini &
   done
 else
-  polybar $THEME --reload -c $THEME_FOLDER/main.ini &
+  polybar $THEME --reload -c $THEME_SELECTED_FOLDER/main.ini &
 fi
-
-# # Launch polybar on all monitors (Default config)
-# if type "xrandr"; then
-#   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-#     MONITOR=$m polybar --reload example -c $HOME/.config/polybar/config &
-#   done
-# else
-#   polybar --reload example -c $HOME/.config/polybar/config &
-# fi
