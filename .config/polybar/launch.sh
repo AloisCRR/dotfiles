@@ -1,13 +1,13 @@
 #!/bin/bash
 
 THEME=$1
-THEMES_FOLDER_NAME=$HOME/.config/polybar/themes
-THEME_FOLDER=$THEMES_FOLDER_NAME/$THEME
-INCLUDE_MODULES_FILE_PATH=$THEME_FOLDER/include.ini
+THEMES_FOLDER=$HOME/.config/polybar/themes
+THEME_SELECTED_FOLDER=$THEMES_FOLDER/$THEME
+INCLUDE_MODULES_FILE_PATH=$THEME_SELECTED_FOLDER/include.ini
 
 cat /dev/null > $INCLUDE_MODULES_FILE_PATH
 
-for file in $THEMES_FOLDER_NAME/$THEME/modules/*.ini
+for file in $THEMES_FOLDER/$THEME/modules/*.ini
 do
   echo "include-file = $file" >> $INCLUDE_MODULES_FILE_PATH
 done
