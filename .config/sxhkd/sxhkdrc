@@ -61,6 +61,12 @@ super + {t,f,shift + f}
 # focus/swap
 #
 
+# Swap all nodes between selected desktop on each monitors, thanks to u/torreemanuele6
+super + s
+    bspc node @HDMI-0:focused:/ -s @DP-0:focused:/ || \
+    bspc node @HDMI-0:focused:/ -d DP-0:focused || \
+    bspc node @DP-0:focused:/ -d HDMI-0:focused;
+
 # Send window to next monitor
 super + alt + {Left,Down,Up,Right}
 	bspc node -m next --follow
