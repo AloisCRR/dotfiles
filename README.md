@@ -22,7 +22,7 @@ My Arch Linux config files
 
 ## Submodules
 
-This repo uses submodules (git projects within git project), to clone it properly yo have to:
+This repo uses submodules (git projects within git project), to clone it properly you have to:
 
 ```bash
 git clone --recurse-submodules https://github.com/AloisCRR/dotfiles
