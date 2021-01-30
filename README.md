@@ -18,4 +18,12 @@ My Arch Linux config files
 
 ## Root user folders config
 
-`etc` and `xorg` folder files need root permissions. I'll try to order the folder as equal as it is in the linux folder, to only copy and paste.
+`etc`, `xorg` and `usr` folder files need root permissions, so theres no good idea to make a sym link of those. I'll try to order the folder as equal as it is in the linux folder, to easily copy and paste.
+
+## Submodules
+
+This repo uses submodules (git projects within git project), to clone it properly yo have to:
+
+```bash
+git clone --recurse-submodules https://github.com/AloisCRR/dotfiles
+```
