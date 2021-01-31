@@ -1,5 +1,5 @@
 configuration {
-	modi: "drun,window,file-browser";
+	modi: "drun";
 /*	width: 50;*/
 /*	lines: 15;*/
 /*	columns: 1;*/
