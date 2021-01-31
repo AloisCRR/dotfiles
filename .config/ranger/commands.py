@@ -60,3 +60,14 @@ class my_edit(Command):
         # This is a generic tab-completion function that iterates through the
         # content of the current directory.
         return self._tab_directory_content()
+
+class code(Command):
+  """
+  :code
+  Opens current directory in VSCode
+  """
+
+  def execute(self):
+    dirname = self.fm.thisdir.path
+    codecmd = ["code", dirname]
+    self.fm.execute_command(codecmd)
