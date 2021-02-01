@@ -1,14 +1,14 @@
 # Completion
-setopt		AUTO_PARAM_KEYS
-setopt		AUTO_PARAM_SLASH
-setopt		BRACE_CCL
-setopt		GLOB_SUBST
-setopt		HIST_NO_STORE
+setopt  AUTO_PARAM_KEYS
+setopt  AUTO_PARAM_SLASH
+setopt  BRACE_CCL
+setopt  GLOB_SUBST
+setopt  HIST_NO_STORE
 
-# List all hidden files in fzf-tab zsh plugin
-setopt	    GLOB_DOTS
+# List all hidden files in fzf-tab zsh plugin and not list ./ or ../
+setopt  GLOB_DOTS && zstyle ':completion:*' special-dirs false
 
-# To list both . and ..
-# setopt	GLOB_DOTS && zstyle ':completion:*' special-dirs true
+# Correction
+setopt  HASH_LIST_ALL
 
 # TODO Remove expansion and add word correction
