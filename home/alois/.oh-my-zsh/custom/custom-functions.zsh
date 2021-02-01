@@ -1,15 +1,3 @@
-# Show all files associated with a package
-function paru-package-files() {
-
-    if [ $# -eq 0 ]
-        then
-            >&2 printf "\nNo arguments provided\n\n"
-            return 1
-    fi
-
-    paru -Qlq "$@" | grep -v '/$' | xargs -r du -h | sort -h
-}
-
 # Custom colored man pages
 function man() {
     env \
