@@ -8,3 +8,5 @@ alias ls='lsd --group-dirs=first'
 alias cat='bat'
 alias paru-clean-install='paru --removemake --cleanafter --confirm'
 alias paru-list-packages="paru -Qq | fzf --preview 'paru -Qil {}' --preview-window=right:50%:wrap --layout=reverse --bind 'enter:execute(paru -Qil {} | less)'"
+alias paru-remove="paru -Rnsu"
+alias paru-remove-all="paru -Rnssuc --confirm"
