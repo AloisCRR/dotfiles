@@ -1,7 +1,5 @@
-#!/usr/bin/zsh
-
 # Show all files associated with a package
-function package-files() {
+function paru-package-files() {
 
     if [ $# -eq 0 ]
         then
