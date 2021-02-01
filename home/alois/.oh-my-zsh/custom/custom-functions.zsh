@@ -24,3 +24,14 @@ function man() {
     LESS_TERMCAP_us=$'\e[01;32m' \
     man "$@"
 }
+
+# Override the default fzf-tab completion functions/completer
+# _files() {
+#     local files=($(fd --type f --hidden --follow --exclude .git))
+#     compadd -a -f files
+# }
+
+# _cd() {
+#     local dirs=($(fd --type d --hidden --follow --exclude .git))
+#     compadd -a -f dirs
+# }
