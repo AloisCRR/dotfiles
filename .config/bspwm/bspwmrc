@@ -7,7 +7,7 @@ picom --experimental-backends &
 $HOME/.config/polybar/launch.sh custom-theme
 nvidia-settings -a "[gpu:0]/GPUFanControlState=1" -a "[fan:0]/GPUTargetFanSpeed=70" > /dev/null &
 nvidia-settings -a "[gpu:0]/GPUPowerMizerMode=0" > /dev/null &
-redshift &
+pgrep -x redshift > /dev/null || redshift &
 
 bspc monitor DP-0 -d I II III IV V
 bspc monitor HDMI-0 -d VI VII VIII IX X
