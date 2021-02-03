@@ -82,7 +82,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fzf-tab fast-syntax-highlighting zsh-completions zsh-autosuggestions)
+plugins=(git fzf-tab fast-syntax-highlighting zsh-completions zsh-autosuggestions command-not-found dotenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,3 +121,7 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # Disabled due to bugs with pipe operator
 # [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
