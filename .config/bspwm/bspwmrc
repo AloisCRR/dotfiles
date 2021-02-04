@@ -10,7 +10,7 @@ nvidia-settings -a "[gpu:0]/GPUPowerMizerMode=0" > /dev/null &
 pgrep -x lxpolkit > /dev/null || lxpolkit &
 
 killall -q redshift
-while pgrep -u $UID -x redshift >/dev/null; do sleep 1; done
+while pgrep -u $UID -x redshift >/dev/null; do sleep 0.2; done
 redshift &
 
 bspc monitor DP-0 -d I II III IV V
