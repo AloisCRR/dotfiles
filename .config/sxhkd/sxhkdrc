@@ -13,7 +13,7 @@ ctrl + shift + r
 # Toggle keyboard layout
 # Other script (setxkbmap -query | grep -q "layout:\s\+us") && setxkbmap es || setxkbmap us
 ctrl + @space
-	{setxkbmap us, setxkbmap es}
+	{setxkbmap es, setxkbmap us}
 
 # program launcher
 super + @space
