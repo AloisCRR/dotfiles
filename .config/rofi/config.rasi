@@ -1,5 +1,5 @@
 configuration {
-	modi: "drun";
+	modi: "drun,clipboard:greenclip print,run";
 /*	width: 50;*/
 /*	lines: 15;*/
 /*	columns: 1;*/
@@ -14,7 +14,7 @@ configuration {
 /*	terminal: "rofi-sensible-terminal";*/
 /*	ssh-client: "ssh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
-/*	run-command: "{cmd}";*/
+	run-command: "{cmd}";
 /*	run-list-command: "";*/
 	run-shell-command: "{terminal} -e {cmd}";
 /*	window-command: "wmctrl -i -R {window}";*/
