@@ -21,7 +21,7 @@ configuration {
 /*	window-match-fields: "all";*/
 /*	icon-theme: ;*/
 /*	drun-match-fields: "name,generic,exec,categories,keywords";*/
-	drun-categories: "WebBrowser,TerminalEmulator,Utility,DesktopSettings,Audio,Video,Development,Graphics,Settings,InstantMessaging";
+	drun-categories: "WebBrowser,TerminalEmulator,Utility,DesktopSettings,Audio,Video,Development,Graphics,Settings,InstantMessaging,Filesystem";
 	drun-show-actions: true;
 /*	drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";*/
 /*	drun-url-launcher: "xdg-open";*/
