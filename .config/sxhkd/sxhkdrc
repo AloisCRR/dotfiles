@@ -81,8 +81,8 @@ super + alt + {Left,Down,Up,Right}
 #	bspc desktop -f '^{1-9,10}'
 
 # Increase/decrease window gap on focused desktop
-super + bracket{left,right}
-	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
+# super + bracket{left,right}
+#	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
 
 # Move focus to other monitor
 super + BackSpace
@@ -101,8 +101,8 @@ super + {_,shift + }{Left,Down,Up,Right}
 #	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
-# super + bracket{left,right}
-#	bspc desktop -f {prev,next}.local
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
 
 # focus the last node/desktop
 super + {grave,Tab}
