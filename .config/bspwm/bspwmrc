@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 wmname LG3D &
-feh --bg-fill ~/Pictures/Wallpapers/wallpaper.jpg &
+feh --bg-fill ~/Pictures/Wallpapers/wallpaper1.png &
 pgrep -x picom > /dev/null || picom --experimental-backends &
 $HOME/.config/polybar/launch.sh custom-theme
 nvidia-settings -a "[gpu:0]/GPUFanControlState=1" -a "[fan:0]/GPUTargetFanSpeed=70" > /dev/null &
