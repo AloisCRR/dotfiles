@@ -33,6 +33,10 @@ command_not_found_handler() {
 	return 127
 }
 
+function vscode() {
+	code $@ && exit
+}
+
 # Override the default fzf-tab completion functions/completer
 # _files() {
 #     local files=($(fd --type f --hidden --follow --exclude .git))
