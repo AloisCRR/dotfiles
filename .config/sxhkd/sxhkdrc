@@ -10,6 +10,10 @@ super + Return
 ctrl + shift + r
 	kitty ranger
 
+# Take screeenshot
+super + shift + s
+	flameshot gui
+
 # Toggle keyboard layout
 # Other script (setxkbmap -query | grep -q "layout:\s\+us") && setxkbmap es || setxkbmap us
 alt + @space
