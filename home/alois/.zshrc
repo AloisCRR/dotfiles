@@ -16,6 +16,19 @@ export FZF_CTRL_T_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
 export FZF_COMPLETION_TRIGGER='~~'
 
+# Set ADB route
+export adb=/home/alois/Android/Sdk/platform-tools/adb
+
+# For Java Apps
+export _JAVA_AWT_WM_NONREPARENTING=1
+export AWT_TOOLKIT=MToolkit
+
+# GTK3 scale factor
+export GDK_SCALE=2
+
+# Flutter Chrome executable
+export CHROME_EXECUTABLE=/usr/bin/chromium
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME

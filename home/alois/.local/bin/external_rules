@@ -1,0 +1,7 @@
+#!/bin/sh
+
+wmtitle=$(xtitle $1)
+
+[[ $wmtitle = "Emulator" ]] && echo state=floating
+
+[[ $wmtitle = "win0" ]] && echo state=floating
