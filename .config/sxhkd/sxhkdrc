@@ -60,7 +60,7 @@ super + q
 #
 
 super + {t,f,shift + f}
-	bspc node -t {tiled,fullscreen,floating}
+	bspc node -t {tiled,\~fullscreen,floating}
 
 # set the window state
 # super + {t,shift + t,s,f}
