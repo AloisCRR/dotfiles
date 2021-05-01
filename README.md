@@ -29,3 +29,7 @@ My Arch Linux config files
 - Run `rm -rf .git/modules/path_to_submodule`
 - Commit the changes with `git commit -m "Removed submodule"`
 - Delete the now untracked submodule files `rm -rf path_to_submodule`
+
+## Flutter web device fix
+
+[StackOverflow](https://stackoverflow.com/questions/59333193/flutter-web-device-not-showing-in-android-studio-vs-code)
