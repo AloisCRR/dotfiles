@@ -22,7 +22,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
     if [ "$m" = "DP-0" ]; then
-      BAR_WIDTH=97% TRAY_POS=right MONITOR=$m polybar $THEME --reload -c $THEME_SELECTED_FOLDER/main.ini &
+      BAR_WIDTH=98% TRAY_POS=right MONITOR=$m polybar $THEME --reload -c $THEME_SELECTED_FOLDER/main.ini &
     else
       BAR_WIDTH=99% MONITOR=$m polybar $THEME --reload -c $THEME_SELECTED_FOLDER/main.ini &
     fi
