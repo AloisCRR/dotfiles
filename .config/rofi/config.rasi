@@ -2,7 +2,7 @@ configuration {
 	modi: "drun,clipboard:greenclip print,run";
 /*	width: 50;*/
 /*	lines: 15;*/
-	columns: 2;
+/*	columns: 2;*/
 /*	font: "mono 12";*/
 /*	bw: 1;*/
 /*	location: 0;*/
