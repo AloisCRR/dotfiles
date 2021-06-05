@@ -7,8 +7,8 @@ super + Return
 	kitty
 
 # Open ranger file manager
-ctrl + shift + r
-	kitty ranger
+# ctrl + shift + r
+#	kitty ranger
 
 # Take screeenshot
 super + shift + s
@@ -61,6 +61,9 @@ super + q
 
 super + {t,f,shift + f}
 	bspc node -t {tiled,\~fullscreen,floating}
+
+super + shift + i
+	winhide
 
 # set the window state
 # super + {t,shift + t,s,f}
