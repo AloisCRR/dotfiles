@@ -1,17 +1,18 @@
 # Custom aliases overriding created ones by default
 
-alias ll='lsd -lh --group-dirs=first'
-alias la='lsd -a --group-dirs=first'
-alias l='lsd --group-dirs=first'
-alias lla='lsd -lha --group-dirs=first'
-alias ls='lsd --group-dirs=first'
+# TODO Add some "peco" command utilities
+
+alias ll='exa --long --icons'
+alias la='exa --long --all --icons'
+alias l='exa --oneline --icons'
+alias lla='exa --long --all --header --icons --extended'
+alias ls='exa --oneline --icons'
 alias cat='bat'
-alias paru-clean-install='paru --removemake --cleanafter --confirm --bottomup'
-alias paru-list-packages="paru -Qq | fzf --preview 'paru -Qil {}' --preview-window=right:50%:wrap --layout=reverse --bind 'enter:execute(paru -Qil {} | less)'"
-alias paru-remove='paru -Rnsu'
-alias paru-remove-all='paru -Rnsssuc --confirm'
-alias paru-info='paru -Sii'
+alias paru-search='paru --removemake --cleanafter --bottomup'
+alias paru-install="paru -Slq | fzf --multi --preview 'paru -Si {1}' | xargs -ro sudo paru --removemake --cleanafter -S"
+alias list-packages="paru -Qq | fzf --preview 'paru -Qil {}' --preview-window=right:50%:wrap --layout=reverse --bind 'enter:execute(paru -Qil {} | less)'"
+alias paru-remove="paru -Qq | fzf --multi --preview 'paru -Qi {1}' | xargs -ro sudo paru -Rnsu"
+alias paru-deep-remove='paru -Rnsssuc --confirm'
 alias temp='cd "$(mktemp -d)"'
-# alias npm='pnpm'
-# alias npx='pnpx'
 alias clear-clipboard='pkill greenclip && greenclip clear && greenclip daemon &'
+alias nano='micro'
