@@ -1,5 +1,5 @@
 # Custom colored man pages
-function man() {
+man() {
     env \
     LESS_TERMCAP_mb=$'\e[01;31m' \
     LESS_TERMCAP_md=$'\e[01;31m' \
@@ -33,8 +33,26 @@ command_not_found_handler() {
 	return 127
 }
 
-function vscode() {
+vscode() {
 	code $@ && exit
+}
+
+lt() {
+	if [ $# -eq 0 ]
+		then
+			exa --tree --level 2 $@
+		else
+			exa --tree --level $@
+	fi
+}
+
+lta() {
+	if [ $# -eq 0 ]
+		then
+			exa --tree --all --level 2
+		else
+			exa --tree --all --level $1
+	fi
 }
 
 # Override the default fzf-tab completion functions/completer
