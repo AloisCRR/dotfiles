@@ -14,7 +14,7 @@ export ZSH="/home/alois/.oh-my-zsh"
 # Override fzf default commands
 export FZF_CTRL_T_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
-export FZF_COMPLETION_TRIGGER='~~'
+export FZF_COMPLETION_TRIGGER='~'
 
 # Set ADB route
 export adb=/home/alois/Android/Sdk/platform-tools/adb
@@ -89,7 +89,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fzf-tab fast-syntax-highlighting zsh-completions zsh-autosuggestions command-not-found dotenv)
+plugins=(git fzf-tab fast-syntax-highlighting zsh-autosuggestions command-not-found dotenv npm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -131,4 +131,4 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # tabtab source for packages
 # uninstall by removing these lines
-[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+# [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
