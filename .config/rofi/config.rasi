@@ -1,5 +1,5 @@
 configuration {
-	modi: "drun,clipboard:greenclip print,run";
+	modi: "drun,clipboard:greenclip print,calc,run";
 /*	width: 50;*/
 /*	lines: 15;*/
 /*	columns: 2;*/
