@@ -8,8 +8,8 @@ alias l='exa --oneline --icons'
 alias lla='exa --long --all --header --icons --extended'
 alias ls='exa --oneline --icons'
 alias cat='bat'
-alias paru-search='paru --removemake --cleanafter --bottomup'
-alias paru-install="paru -Slq | fzf --multi --preview 'paru -Si {1}' | xargs -ro sudo paru --removemake --cleanafter -S"
+alias paru-install='paru --removemake --cleanafter --bottomup'
+alias paru-search="paru -Slq | fzf --multi --preview 'paru -Si {1}' | xargs -ro paru --removemake --cleanafter -S"
 alias list-packages="paru -Qq | fzf --preview 'paru -Qil {}' --preview-window=right:50%:wrap --layout=reverse --bind 'enter:execute(paru -Qil {} | less)'"
 alias paru-remove="paru -Qq | fzf --multi --preview 'paru -Qi {1}' | xargs -ro sudo paru -Rnsu"
 alias paru-deep-remove='paru -Rnsssuc --confirm'
