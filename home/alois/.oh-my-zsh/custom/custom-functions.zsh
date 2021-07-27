@@ -38,20 +38,25 @@ vscode() {
 }
 
 lt() {
-	if [ $# -eq 0 ]
+
+	number_regex='^[0-9]+$'
+
+	if ! [[ $1 =~ $number_regex ]] ;
 		then
 			exa --tree --level 2 $@
 		else
-			exa --tree --level $@
+			exa --tree --level $1 ${@:2}
 	fi
 }
 
 lta() {
-	if [ $# -eq 0 ]
+	number_regex='^[0-9]+$'
+
+	if ! [[ $1 =~ $number_regex ]] ;
 		then
-			exa --tree --all --level 2
+			exa --tree --all --level 2 $@
 		else
-			exa --tree --all --level $1
+			exa --tree --all --level $1 ${@:2}
 	fi
 }
 
