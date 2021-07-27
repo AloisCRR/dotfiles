@@ -16,6 +16,9 @@ export FZF_CTRL_T_COMMAND='fd --type f --hidden --follow --exclude .git'
 export FZF_ALT_C_COMMAND='fd --type d --hidden --follow --exclude .git'
 export FZF_COMPLETION_TRIGGER='~'
 
+# Add default editor
+export EDITOR='micro'
+
 # Set ADB route
 export adb=/home/alois/Android/Sdk/platform-tools/adb
 
