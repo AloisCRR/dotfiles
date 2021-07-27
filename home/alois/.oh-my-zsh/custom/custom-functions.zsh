@@ -55,6 +55,10 @@ lta() {
 	fi
 }
 
+play() {
+	nohup acestream-launcher acestream://$1 > /dev/null &; exit
+}
+
 # Override the default fzf-tab completion functions/completer
 # _files() {
 #     local files=($(fd --type f --hidden --follow --exclude .git))
