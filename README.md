@@ -33,3 +33,13 @@ My Arch Linux config files
 ## Flutter web device fix
 
 [StackOverflow](https://stackoverflow.com/questions/59333193/flutter-web-device-not-showing-in-android-studio-vs-code)
+
+## Add Siji font for polybar glyphs
+
+1. Clone Siji [official repo](https://github.com/stark/siji)
+
+1. Copy `siji/bdf/siji.bdf` -> /usr/share/fonts/misc
+
+1. Run `fc-cache`
+
+1. Done
