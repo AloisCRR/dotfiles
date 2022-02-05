@@ -11,4 +11,7 @@ setopt  GLOB_DOTS && zstyle ':completion:*' special-dirs false
 # Correction
 setopt  HASH_LIST_ALL
 
+# File regex
+setopt	extendedglob
+
 # TODO Remove expansion and add word correction

@@ -44,8 +44,8 @@ super + q
 	bspc node -c
 
 # alternate between the tiled and monocle layout
-# super + m
-#	bspc desktop -l next
+super + m
+	bspc desktop -l next
 
 # send the newest marked node to the newest preselected node
 # super + y
@@ -108,8 +108,8 @@ super + {_,shift + }{Left,Down,Up,Right}
 #	bspc node -f @{parent,brother,first,second}
 
 # focus the next/previous window in the current desktop
-# super + {_,shift + }c
-#	bspc node -f {next,prev}.local.!hidden.window
+super + {_,shift + }c
+	bspc node -f {next,prev}.local.!hidden.window
 
 # focus the next/previous desktop in the current monitor
 super + bracket{left,right}
@@ -175,3 +175,53 @@ super + ctrl + shift + {Left,Down,Up,Right}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# multimedia keys
+
+# Increase volume
+XF86AudioRaiseVolume
+    amixer set Master 10%+ 1>/dev/null
+
+# Decrease volume
+XF86AudioLowerVolume
+    amixer set Master 10%- 1>/dev/null
+
+# Mute Audio
+XF86AudioMute
+    amixer -D pulse set Master 1+ toggle 1>/dev/null
+
+# Play
+XF86AudioPlay
+    playerctl play-pause
+
+# Next
+XF86AudioNext
+    playerctl next
+
+# Previous
+XF86AudioPrev
+    playerctl previous
+
+# Stop
+XF86AudioStop
+    playerctl stop
+
+
+# fast forward and rewind
+#==========================
+
+# h,j,k,l keys
+alt + super + {XF86AudioPrev,XF86AudioNext}
+  playerctl position {0.5-,0.5+}
+
+# play/pause toggle
+alt + super + space
+    playerctl play-pause
+
+# stop/quit
+alt + super + n
+    playerctl stop
+
+# go to start of video
+alt + super + 0
+  playerctl position 0

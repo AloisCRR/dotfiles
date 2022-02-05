@@ -24,7 +24,7 @@ if type "xrandr"; then
     if [ "$m" = "DP-0" ]; then
       BAR_WIDTH=98% TRAY_POS=right MONITOR=$m polybar $THEME --reload -c $THEME_SELECTED_FOLDER/main.ini &
     else
-      BAR_WIDTH=99% MONITOR=$m polybar $THEME --reload -c $THEME_SELECTED_FOLDER/main.ini &
+      BAR_WIDTH=99% TRAY_POS=hola MONITOR=$m polybar $THEME --reload -c $THEME_SELECTED_FOLDER/main.ini &
     fi
   done
 else

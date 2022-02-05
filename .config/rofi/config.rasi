@@ -14,14 +14,14 @@ configuration {
 /*	terminal: "rofi-sensible-terminal";*/
 /*	ssh-client: "ssh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
-	run-command: "{cmd}";
+/*	run-command: "{cmd}";*/
 /*	run-list-command: "";*/
 	run-shell-command: "{terminal} -e {cmd}";
 /*	window-command: "wmctrl -i -R {window}";*/
 /*	window-match-fields: "all";*/
 /*	icon-theme: ;*/
 /*	drun-match-fields: "name,generic,exec,categories,keywords";*/
-	drun-categories: "WebBrowser,TerminalEmulator,Utility,DesktopSettings,Audio,Video,Development,Graphics,Settings,InstantMessaging,Filesystem";
+	drun-categories: "Office,WebBrowser,TerminalEmulator,Utility,DesktopSettings,Audio,Video,Development,Graphics,Settings,InstantMessaging,Filesystem";
 	drun-show-actions: true;
 /*	drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";*/
 /*	drun-url-launcher: "xdg-open";*/

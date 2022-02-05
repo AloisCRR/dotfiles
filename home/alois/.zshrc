@@ -135,3 +135,6 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 # tabtab source for packages
 # uninstall by removing these lines
 # [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+
+# Add ssh keys management
+eval $(keychain --eval --quiet ~/.ssh/id_ed25519)
